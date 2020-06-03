@@ -1,22 +1,3 @@
-var fetchUrl = require("fetch").fetchUrl;
-
-const minutes = 1;
-const target = "https://kmgtefn8py.herokuapp.com/";
-
-
-console.log("Started");
-
-setInterval(function(){
-fetchUrl(target, function(error, meta, body){
-    console.log(body.toString());
-});
-}, minutes * 60 * 1000);
-
-setInterval(function(){
-    console.log("server-keepalive running")
-}, 5000);
-
-
 const http = require('http')
 const httpProxy = require('http-proxy')
 const express = require('express')
