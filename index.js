@@ -1,3 +1,4 @@
+const keepalive = require("./utils/keepalive");
 const http = require('http')
 const httpProxy = require('http-proxy')
 const express = require('express')
@@ -16,6 +17,8 @@ const proxy = httpProxy.createProxyServer({
 	ws: true
 })
 const server = http.createServer(app)
+
+keepalive();
 
 // Proxy websocket
 server.on('upgrade', (req, socket, head) => {
