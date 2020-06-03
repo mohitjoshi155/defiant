@@ -4,9 +4,6 @@
 	"repository": "https://github.com/pctechkid/5rp2eeph3k",
 	"keywords": ["r_omboy"],
 	"env": {
-		"SITE": {
-			"description": "Value is the link of your site. Should be the same with app name above."
-		},
 		"HEROKU_APP_NAME": {
 			"description": "This should be the same as \"App name\" above."
 		},
