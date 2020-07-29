@@ -9,6 +9,10 @@
 		},
 		"ARIA2C_SECRET": {
 			"description": "Secret"
+		},
+		"RCLONE_DESTINATION": {
+			"description": "Path to store your file in your Rclone drive. Must start with a forward slash.",
+			"required": false
 		}
 	},
 	"buildpacks": [
