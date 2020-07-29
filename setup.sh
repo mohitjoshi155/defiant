@@ -18,5 +18,5 @@ wget -q https://github.com/P3TERX/aria2.conf/raw/master/dht.dat
 wget -q https://github.com/P3TERX/aria2.conf/raw/master/dht6.dat
 
 # Tracker
-tracker_list=$(wget -qO- https://trackerslist.com/all.txt || wget https://github.com/DeSireFire/animeTrackerList/blob/master/AT_all.txt |awk NF|sed ":a;N;s/\n/,/g;ta")
+tracker_list=$(wget -qO- https://trackerslist.com/all.txt || wget -qO- https://github.com/DeSireFire/animeTrackerList/blob/master/AT_all.txt |awk NF|sed ":a;N;s/\n/,/g;ta")
 echo "bt-tracker=$tracker_list" >> aria2c.conf
