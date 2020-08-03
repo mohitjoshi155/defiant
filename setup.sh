@@ -18,7 +18,5 @@ wget -q https://github.com/P3TERX/aria2.conf/raw/master/dht.dat
 wget -q https://github.com/P3TERX/aria2.conf/raw/master/dht6.dat
 
 # Tracker
-DOWNLOADER="curl -fsSL --connect-timeout 3 --max-time 3 --retry 2"
-tracker_list=$(
-            ${DOWNLOADER} https://trackerslist.com/all.txt |awk NF|sed ":a;N;s/\n/,/g;ta")
+tracker_list=$(wget -qO- https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt |awk NF|sed ":a;N;s/\n/,/g;ta")
 echo "bt-tracker=$tracker_list" >> aria2c.conf
