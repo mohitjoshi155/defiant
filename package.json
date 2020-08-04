@@ -1,8 +1,8 @@
 {
-	"name": "heroku-aria2c",
-	"version": "1.0.0",
+	"name": "rco",
+	"version": "1.2.1",
 	"main": "index.js",
-	"author": "maple3142 <kirby741852963@gmail.com>",
+	"author": "rco",
 	"license": "MIT",
 	"dependencies": {
 		"express": "^4.17.1",
